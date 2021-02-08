@@ -19,8 +19,6 @@ android {
 
     buildTypes {
         release {
-            minifyEnabled false
-//            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
             consumerProguardFiles "consumer-rules.pro"
         }
     }
@@ -42,4 +40,20 @@ dependencies {
     testImplementation 'junit:junit:4.+'
     androidTestImplementation 'androidx.test.ext:junit:1.1.1'
     androidTestImplementation 'androidx.test.espresso:espresso-core:3.2.0'
+
+    // 日志输出
+    implementation "com.orhanobut:logger:2.2.0"
+    // 动态权限
+    api "pub.devrel:easypermissions:3.0.0"
+    // 列表适配器
+    api "com.github.CymChad:BaseRecyclerViewAdapterHelper:3.0.4"
+    // BasePopup
+    api "com.github.razerdp:BasePopup:2.2.9"
+    // Eventbus
+    api "org.greenrobot:eventbus:3.2.0"
+    // Utilcodex
+    api "com.blankj:utilcodex:1.30.4"
+    // Gson
+    api "com.google.code.gson:gson:2.8.6"
+
 }

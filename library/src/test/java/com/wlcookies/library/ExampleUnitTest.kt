@@ -1,5 +1,6 @@
 package com.wlcookies.library
 
+import com.wlcookies.library.utils.getTimeUUID
 import org.junit.Test
 
 import org.junit.Assert.*
@@ -12,6 +13,8 @@ import org.junit.Assert.*
 class ExampleUnitTest {
     @Test
     fun addition_isCorrect() {
-        assertEquals(4, 2 + 2)
+        println(getTimeUUID())
+        println(getTimeUUID(7))
+        println(getTimeUUID(8))
     }
 }
